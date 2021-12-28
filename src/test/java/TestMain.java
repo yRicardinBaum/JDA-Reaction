@@ -18,7 +18,7 @@ public class TestMain {
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         // BOT MAKING
-        JDABuilder builder = JDABuilder.createDefault("ODk0MzI1MjU2MDU4MTk2MDQw.YVoXTA.2HDAryayfyYm4lSj4XclgVhXT6c");
+        JDABuilder builder = JDABuilder.createDefault("TOKEN");
         bot = builder.build();
         bot.awaitReady();
 
@@ -31,10 +31,10 @@ public class TestMain {
 
 
         // CHANNEL INFO
-        Guild guilda = bot.getGuildById("923359004107874324");
+        Guild guilda = bot.getGuildById("GUILDID");
         assert guilda != null;
         Emote emoji = guilda.getEmotes().get(0);
-        TextChannel canal = guilda.getTextChannelById("923359004107874327");
+        TextChannel canal = guilda.getTextChannelById("CHANNELID");
 
 
         // MESSAGE INFO
