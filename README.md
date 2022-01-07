@@ -102,7 +102,7 @@ Agora iremos preparar a mensagem:
 Agora iremos configurar os emojis a serem adicionados na mensagem:
 ```java
         // ADICIONANDO REAÇÃO
-        embedToReact.addReact(/*EMOTE*/emoji, (/*MENSAGEM REAGIDA*/ msg, /*AUTOR DA REAÇÃO*/user) -> {
+        embedToReact.addReact(emoji, (/*MENSAGEM REAGIDA*/ msg, /*AUTOR DA REAÇÃO*/user) -> {
             // CONSTRUÇÃO DE UMA EMBED
             EmbedBuilder builder3 = new EmbedBuilder().setDescription("eae");
             MessageBuilder embedsla = new MessageBuilder(builder3.build());
